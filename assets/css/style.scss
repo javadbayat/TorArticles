@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.wrapper {
+  text-align: right;
+  direction: rtl;
+}
+
+.wrapper code {
+  text-align: left;
+  direction: ltr;
+}
