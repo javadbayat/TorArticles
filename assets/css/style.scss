@@ -8,11 +8,6 @@
   direction: rtl;
 }
 
-.wrapper code {
-  text-align: left;
-  direction: ltr;
-}
-
 header > ul {
   display: none;
 }
@@ -20,4 +15,6 @@ header > ul {
 pre.highlight {
   margin-left: initial;
   margin-right: -60px;
+  text-align: left;
+  direction: ltr;
 }
