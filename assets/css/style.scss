@@ -8,13 +8,16 @@
   direction: rtl;
 }
 
-/*
 .wrapper code {
   text-align: left;
   direction: ltr;
 }
-*/
 
 header > ul {
   display: none;
+}
+
+pre.highlight {
+  margin-left: initial;
+  margin-right: -60px;
 }
