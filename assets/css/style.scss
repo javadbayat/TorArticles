@@ -3,9 +3,17 @@
 
 @import "{{ site.theme }}";
 
+@font-face {
+  font-family: 'nazanin';
+  src: url('BNazanin.woff2') format('woff2'),
+         url('BNazanin.woff') format('woff'),
+         url('BNazanin.ttf') format('truetype');
+}
+
 .wrapper {
   text-align: right;
   direction: rtl;
+  font-family: nazanin, 'Segoe UI', Tahoma, sans-serif;
 }
 
 .wrapper p, li {
