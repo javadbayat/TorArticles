@@ -1,5 +1,5 @@
 # Testing Tor and Snowflake via Hamrah Aval operator
-Snowflake does not work in Iran via the Hamrah Aval mobile operator, as Tor Browser takes a very long time attempting to establish a connection, and it never succeeds to connect.
+Snowflake does not work in Iran via the Hamrah Aval mobile operator, as Tor Browser spends a very long time attempting to establish a connection, and it never succeeds to connect.
 
 However, Snowflake currently works properly via other Iranian ISPs, such as Irancell, Ritel, .etc, and also via residential internet connections.
 
