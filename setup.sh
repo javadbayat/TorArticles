@@ -6,19 +6,23 @@
 #
 # To use it, simply run this command in your Termux app:
 # curl https://javadbayat.github.io/TorArticles/setup.sh | sh
+#
+# After the installation, close and relaunch Termux.
+# Whenever you want to run Tor, simply press CTRL+T in
+# your Termux app! Enjoy!
 
 cd ~
 pkg upgrade -y
 pkg install tor golang git nano -y
 git clone https://git.torproject.org/pluggable-transports/snowflake.git
-cd snowflake/client
-go get
-go build
-cd ~
 clear
 echo -en "\e[1;34m You no longer need your VPN! Please turn it off and press Enter to continue installation. \e[0m"
 read
 clear
+cd snowflake/client
+go get
+go build
+cd ~
 rm $PREFIX/etc/tor/torrc
 curl https://javadbayat.github.io/TorArticles/torrc -o $PREFIX/etc/tor/torrc
 curl https://javadbayat.github.io/TorArticles/tor-shortcut.sh >> ~/.bashrc
